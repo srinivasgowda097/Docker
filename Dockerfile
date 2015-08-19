@@ -9,6 +9,7 @@ RUN apt-get -y update \
 
 RUN pip install robotframework==2.9
 RUN pip install robotframework-selenium2library==1.7.3
+RUN pip install requests==2.7.0
 
 RUN     mkdir /robot
 VOLUME  /robot
