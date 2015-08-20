@@ -9,8 +9,9 @@ RUN apt-get -y update \
 
 RUN pip install robotframework==2.9
 RUN pip install robotframework-selenium2library==1.7.3
-RUN pip install requests==2.7.0
-RUN pip install --pre -U robotframework-difflibrary
+RUN pip install requests==2.3.0
+RUN pip install --pre -U robotframework-difflibrary==0.1dev
+RUN pip install cassandra-driver==2.5.0
 
 RUN     mkdir /robot
 VOLUME  /robot
